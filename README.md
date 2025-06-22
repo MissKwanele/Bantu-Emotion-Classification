@@ -56,6 +56,6 @@ If available, download the full research write-up from the `reports/` folder.
 ---
 
 ## 👩🏽‍💻 Author
-**Nonkululeko Sithole**  
+**Nonkululeko Ntshele**  
 Honours Research | NLP + Cybersecurity | Defence Software
     
