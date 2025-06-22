@@ -1,76 +1,61 @@
 
-# Bantu Emotion Classification
-# Emotion Classification for Bantu Languages
+# 🌍 Bantu Emotion Classification
 
-This Jupyter notebook trains and evaluates emotion classification models for three African languages:
-Zulu, Xhosa, and Swahili.
-The models leverage transfer learning with pre-trained language models,
-hyperparameter tuning, and gradual unfreezing techniques for efficient training.
+This project explores **multilabel emotion classification** for low-resource African languages (isiZulu, isiXhosa, Swahili) using transformer-based models like **AfriBERTa**, **XLM-R**, and **Serengeti**.
 
-## Key Features
+![Language NLP banner](https://img.shields.io/badge/NLP-African%20Languages-green)
+![Model](https://img.shields.io/badge/Transformers-HuggingFace-blue)
+![License](https://img.shields.io/github/license/MissKwanele/Bantu-Emotion-Classification)
 
-- Multi-language Support: Trains models for Zulu, Xhosa, and Swahili
-- Model Variety: Uses three transformer architectures:
-    -- AfriBERTa (castorini/afriberta_large)
-    -- XLM-RoBERTa (xlm-roberta-base)
-    -- Serengeti (UBC-NLP/serengeti-E250)
-- Dataset used: BRIGHTER+ Dataset
-- Hyperparameter Optimization: Uses Optuna for hyperparameter tuning
-- Gradual Unfreezing: Implements layer-wise unfreezing during training
-- Performance Metrics: Tracks F1 scores, ROC AUC, Hamming loss, and more
-- Efficiency Monitoring: Logs GPU memory, power usage, and inference times
+---
 
-## Notebook Structure
+## 🔍 Project Highlights
+- Fine-tuning multilingual models for **emotion classification**
+- Multilabel setup: joy, anger, sadness, fear, surprise, disgust
+- Visualized confusion matrices + F1 scores
+- Logged metrics using **Weights & Biases**
+- Focus on underrepresented **Bantu languages**
 
-  *Environment Setup*
-    Installs required packages
-    Configures GPU monitoring
-    Initializes efficiency metrics tracking
-  *Data Loading & Preprocessing*
-    Loads parquet datasets from Google Drive
-    Cleans text data
-    Splits into train/validation/test sets
-    Prepares datasets for model input
-  *Model Training*
-    Hyperparameter tuning with Optuna
-    Gradual Unfreezing implementation
-    Custom training loop with efficiency metrics
-    Model saving to Google Drive
-  *Evaluation*
-    Generates predictions for test sets
-    Calculates performance metrics
-    Logs results to Weights & Biases
-    Saves evaluation results to CSV
+---
 
-## 🧠 Research Context
-- Part of an Honours NLP Module focused on **low-resource African languages**
-- Models evaluated using **transfer learning** techniques
-- Logged experiments with **Weights & Biases**
+## 🗂 Structure
+```bash
+notebooks/       # Colab training + eval notebooks
+src/             # Training + eval Python scripts
+models/          # Final models only (no checkpoints)
+results/         # Evaluation reports and images
+reports/         # PDF project report
+docs/            # GitHub Pages landing page (index.html)
+```
 
-## 🛠 Tools Used
-`Python`, `Transformers (HuggingFace)`, `WandB`, `Colab`, `PyTorch`
+---
 
-## How to Use
-1. Clone the repository.
-2. Upload 760Final.ipynb to Google Colab or run locally with Jupyter.
-3. Run all cells in sequence.
+## 🛠 Tech Stack
+- `transformers`, `torch`, `wandb`
+- `Colab`, `matplotlib`, `scikit-learn`
+- `sentencepiece`, `pandas`
 
-## Usage Requirements
-1. Google Drive Mounting
-    - Dataset paths are hardcoded to Google Drive location
-    - Requires shared drive access with dataset files
-2. Weights & Biases:
-    - Performance metrics are logged to W&B
-    - Requires W&B account and API key
-3. GPU Acceleration:
-    - Designed for GPU runtime (CUDA required)
-    - Includes GPU memory monitoring
+---
 
-## Contributors
-- COS 760 – Group 13 - University of Pretoria (2025)
-- Nonkululeko Ntshele (u21668452@tuks.co.za)
-- Charlize Hanekom (u22487222@tuks.co.za)
-- Jayson du Toit (u22571532@tuks.co.za)
+## 🚀 Run it yourself
+```bash
+pip install -r requirements.txt
+```
 
-The notebook provides a comprehensive pipeline for training and evaluating emotion
-classification models on low-resource African languages using state-of-the-art techniques.
+---
+
+## 📄 Report
+If available, download the full research write-up from the `reports/` folder.
+
+---
+
+## 🌐 GitHub Pages
+> A live version of this project will be hosted at:
+`https://misskwanele.github.io/Bantu-Emotion-Classification/`
+
+---
+
+## 👩🏽‍💻 Author
+**Nonkululeko Sithole**  
+Honours Research | NLP + Cybersecurity | Defence Software
+    

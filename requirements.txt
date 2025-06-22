@@ -1,0 +1,9 @@
+
+transformers>=4.40
+pandas
+scikit-learn
+matplotlib
+seaborn
+wandb
+sentencepiece
+torch
