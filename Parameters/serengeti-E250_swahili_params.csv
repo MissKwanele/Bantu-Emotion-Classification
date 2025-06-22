@@ -1,0 +1,2 @@
+model,language,lr,batch_size,dropout,epochs,weight_decay,warmup_steps,grad_clip
+UBC-NLP/serengeti-E250,swahili,3e-05,8,0.1,2,0.01,100,1.0

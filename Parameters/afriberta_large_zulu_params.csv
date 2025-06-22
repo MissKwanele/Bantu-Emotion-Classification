@@ -1,0 +1,2 @@
+model,language,lr,batch_size,dropout,epochs,weight_decay,warmup_steps,grad_clip
+castorini/afriberta_large,zulu,3e-05,8,0.1,2,0.01,0,1.0

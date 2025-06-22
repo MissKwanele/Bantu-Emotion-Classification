@@ -1,0 +1,70 @@
+{
+  "best_global_step": 276,
+  "best_metric": 0.6668071898060747,
+  "best_model_checkpoint": "/content/drive/Shareddrives/COS 760 Group 13 Project/BaseModels/afriberta_swahili/checkpoint-276",
+  "epoch": 2.0,
+  "eval_steps": 500,
+  "global_step": 276,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.7246376811594203,
+      "grad_norm": 0.798179566860199,
+      "learning_rate": 7.608695652173914e-06,
+      "loss": 0.3117,
+      "step": 100
+    },
+    {
+      "epoch": 1.0,
+      "eval_f1": 0.0,
+      "eval_hamming_loss": 0.09973832528180354,
+      "eval_loss": 0.3104000985622406,
+      "eval_roc_auc": 0.6572704367253859,
+      "eval_runtime": 14.4062,
+      "eval_samples_per_second": 229.901,
+      "eval_steps_per_second": 28.738,
+      "step": 138
+    },
+    {
+      "epoch": 1.4492753623188406,
+      "grad_norm": 0.9857178330421448,
+      "learning_rate": 5.193236714975846e-06,
+      "loss": 0.2974,
+      "step": 200
+    },
+    {
+      "epoch": 2.0,
+      "eval_f1": 0.08963093145869948,
+      "eval_hamming_loss": 0.10426731078904992,
+      "eval_loss": 0.30775174498558044,
+      "eval_roc_auc": 0.6668071898060747,
+      "eval_runtime": 14.107,
+      "eval_samples_per_second": 234.778,
+      "eval_steps_per_second": 29.347,
+      "step": 276
+    }
+  ],
+  "logging_steps": 100,
+  "max_steps": 414,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 3,
+  "save_steps": 1000,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 76560512268528.0,
+  "train_batch_size": 8,
+  "trial_name": null,
+  "trial_params": null
+}

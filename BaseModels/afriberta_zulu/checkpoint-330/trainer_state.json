@@ -1,0 +1,88 @@
+{
+  "best_global_step": 330,
+  "best_metric": 0.7248544036687664,
+  "best_model_checkpoint": "/content/drive/Shareddrives/COS 760 Group 13 Project/BaseModels/afriberta_zulu/checkpoint-330",
+  "epoch": 3.0,
+  "eval_steps": 500,
+  "global_step": 330,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.9090909090909091,
+      "grad_norm": 0.7325348854064941,
+      "learning_rate": 7e-06,
+      "loss": 0.3266,
+      "step": 100
+    },
+    {
+      "epoch": 1.0,
+      "eval_f1": 0.0,
+      "eval_hamming_loss": 0.08304836345872008,
+      "eval_loss": 0.2652241289615631,
+      "eval_roc_auc": 0.7106869012922163,
+      "eval_runtime": 9.6324,
+      "eval_samples_per_second": 212.512,
+      "eval_steps_per_second": 26.577,
+      "step": 110
+    },
+    {
+      "epoch": 1.8181818181818183,
+      "grad_norm": 0.6024971604347229,
+      "learning_rate": 3.96969696969697e-06,
+      "loss": 0.2608,
+      "step": 200
+    },
+    {
+      "epoch": 2.0,
+      "eval_f1": 0.0,
+      "eval_hamming_loss": 0.08304836345872008,
+      "eval_loss": 0.2625104784965515,
+      "eval_roc_auc": 0.7160377949794728,
+      "eval_runtime": 10.3406,
+      "eval_samples_per_second": 197.957,
+      "eval_steps_per_second": 24.757,
+      "step": 220
+    },
+    {
+      "epoch": 2.7272727272727275,
+      "grad_norm": 0.6411384344100952,
+      "learning_rate": 9.393939393939395e-07,
+      "loss": 0.2546,
+      "step": 300
+    },
+    {
+      "epoch": 3.0,
+      "eval_f1": 0.14506927465362673,
+      "eval_hamming_loss": 0.08540954241980134,
+      "eval_loss": 0.258486270904541,
+      "eval_roc_auc": 0.7248544036687664,
+      "eval_runtime": 10.6528,
+      "eval_samples_per_second": 192.155,
+      "eval_steps_per_second": 24.031,
+      "step": 330
+    }
+  ],
+  "logging_steps": 100,
+  "max_steps": 330,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 3,
+  "save_steps": 1000,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 120454022335500.0,
+  "train_batch_size": 8,
+  "trial_name": null,
+  "trial_params": null
+}
